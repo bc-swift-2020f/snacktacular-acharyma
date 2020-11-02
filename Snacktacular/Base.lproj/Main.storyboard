@@ -235,15 +235,21 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title=" Photo" image="camera.fill" catalog="system"/>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-K7-y4a">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Wrx-2I-Yqk" firstAttribute="top" secondItem="MFl-gZ-OTT" secondAttribute="top" constant="8" id="0b6-jz-nEy"/>
+                                    <constraint firstItem="QKf-K7-y4a" firstAttribute="leading" secondItem="MFl-gZ-OTT" secondAttribute="leading" id="16L-hH-w88"/>
                                     <constraint firstItem="h2C-jq-CzZ" firstAttribute="leading" secondItem="MFl-gZ-OTT" secondAttribute="leading" constant="8" id="1Ap-GU-SPT"/>
                                     <constraint firstItem="Wrx-2I-Yqk" firstAttribute="leading" secondItem="MFl-gZ-OTT" secondAttribute="leading" constant="8" id="3KX-v4-4LQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="QKf-K7-y4a" secondAttribute="trailing" id="677-s9-dsB"/>
                                     <constraint firstItem="LB9-Ga-w0I" firstAttribute="leading" secondItem="MFl-gZ-OTT" secondAttribute="leading" constant="8" id="6yK-yI-TJ5"/>
                                     <constraint firstAttribute="trailing" secondItem="Wrx-2I-Yqk" secondAttribute="trailing" constant="8" id="7Fv-ZB-6Rs"/>
                                     <constraint firstItem="ufJ-mB-hi9" firstAttribute="leading" secondItem="LB9-Ga-w0I" secondAttribute="trailing" id="G6r-2C-eAJ"/>
+                                    <constraint firstItem="XT7-MZ-sku" firstAttribute="top" secondItem="QKf-K7-y4a" secondAttribute="bottom" id="KX9-Tq-5rM"/>
                                     <constraint firstItem="Ffu-4V-dDh" firstAttribute="leading" secondItem="ov5-3n-ay9" secondAttribute="trailing" constant="8" id="T1h-b2-6ze"/>
                                     <constraint firstAttribute="trailing" secondItem="XT7-MZ-sku" secondAttribute="trailing" id="VVl-nL-XFt"/>
                                     <constraint firstAttribute="height" constant="380" id="VhN-K8-NWj"/>
@@ -255,6 +261,7 @@
                                     <constraint firstItem="ufJ-mB-hi9" firstAttribute="top" secondItem="XT7-MZ-sku" secondAttribute="bottom" constant="6" id="obk-eI-1aC"/>
                                     <constraint firstItem="LB9-Ga-w0I" firstAttribute="top" secondItem="XT7-MZ-sku" secondAttribute="bottom" constant="8" id="utS-At-tfw"/>
                                     <constraint firstItem="XT7-MZ-sku" firstAttribute="top" secondItem="MFl-gZ-OTT" secondAttribute="top" constant="242" id="vfL-uI-7vt"/>
+                                    <constraint firstItem="QKf-K7-y4a" firstAttribute="top" secondItem="h2C-jq-CzZ" secondAttribute="bottom" constant="2" id="yga-l7-0y5"/>
                                     <constraint firstItem="XT7-MZ-sku" firstAttribute="leading" secondItem="MFl-gZ-OTT" secondAttribute="leading" id="zNV-kE-u8j"/>
                                 </constraints>
                             </view>
@@ -291,6 +298,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="h2C-jq-CzZ" id="bh9-Kh-nV8"/>
+                        <outlet property="mapView" destination="QKf-K7-y4a" id="7b1-i9-fAO"/>
                         <outlet property="nameTextField" destination="Wrx-2I-Yqk" id="0Sw-Jm-p03"/>
                         <outlet property="ratingLabel" destination="ufJ-mB-hi9" id="15n-Yb-H0I"/>
                     </connections>
