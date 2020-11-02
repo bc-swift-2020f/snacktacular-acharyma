@@ -223,7 +223,7 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="3Ez-Oo-Olk"/>
+                        <barButtonItem title="Look Up" id="3Ez-Oo-Olk"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Fpa-5g-9FB">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Rsa-q2-tpq">
@@ -233,6 +233,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="h2C-jq-CzZ" id="bh9-Kh-nV8"/>
+                        <outlet property="nameTextField" destination="Wrx-2I-Yqk" id="0Sw-Jm-p03"/>
+                        <outlet property="ratingLabel" destination="ufJ-mB-hi9" id="15n-Yb-H0I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8V8-O4-gsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
