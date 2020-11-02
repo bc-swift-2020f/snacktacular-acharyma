@@ -12,6 +12,6 @@ class SpotTableViewCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var ratingLable: UILabel!
     
-    
+    //test
 
 }
