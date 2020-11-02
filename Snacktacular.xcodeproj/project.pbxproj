@@ -15,7 +15,6 @@
 		7E3057D525506B4C0097ACEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3057D425506B4C0097ACEE /* GoogleService-Info.plist */; };
 		7E3057D9255088810097ACEE /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3057D8255088810097ACEE /* UIViewController+alert.swift */; };
 		7E3057DD25508D640097ACEE /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3057DC25508D630097ACEE /* Spots.swift */; };
-		7E30583D255098B00097ACEE /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30583C255098AF0097ACEE /* APIKeys.swift */; };
 		7E3EA338254F720A005E5C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA337254F720A005E5C56 /* AppDelegate.swift */; };
 		7E3EA33A254F720A005E5C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA339254F720A005E5C56 /* SceneDelegate.swift */; };
 		7E3EA33C254F720A005E5C56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA33B254F720A005E5C56 /* LoginViewController.swift */; };
@@ -33,7 +32,6 @@
 		7E3057D425506B4C0097ACEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E3057D8255088810097ACEE /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		7E3057DC25508D630097ACEE /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
-		7E30583C255098AF0097ACEE /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		7E3EA334254F720A005E5C56 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3EA337254F720A005E5C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3EA339254F720A005E5C56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				7E2DC43E254F86850085DA40 /* SpotTableViewCell.swift */,
 				7E2DC441254F8D3C0085DA40 /* SpotDetailViewController.swift */,
 				7E3057D8255088810097ACEE /* UIViewController+alert.swift */,
-				7E30583C255098AF0097ACEE /* APIKeys.swift */,
 				7E3EA33D254F720A005E5C56 /* Main.storyboard */,
 				7E3EA340254F7212005E5C56 /* Assets.xcassets */,
 				7E3EA342254F7212005E5C56 /* LaunchScreen.storyboard */,
@@ -254,7 +251,6 @@
 				7E2DC442254F8D3C0085DA40 /* SpotDetailViewController.swift in Sources */,
 				7E3057DD25508D640097ACEE /* Spots.swift in Sources */,
 				7E2DC43F254F86850085DA40 /* SpotTableViewCell.swift in Sources */,
-				7E30583D255098B00097ACEE /* APIKeys.swift in Sources */,
 				7E3057C6254FC5C70097ACEE /* Spot.swift in Sources */,
 				7E3EA33A254F720A005E5C56 /* SceneDelegate.swift in Sources */,
 				7E3057D9255088810097ACEE /* UIViewController+alert.swift in Sources */,
