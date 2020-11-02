@@ -11,12 +11,26 @@ class SpotListViewController: UIViewController {
     
     var spots = ["Island Creek Oysters", "El Pelon", "Shake Shack", "Pino's Pizza"]
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        configureSegmentControl()
+    }
+    
+    func configureSegmentControl() {
+        //set font colors
+        let orangeFontColor = [NSAttributedString.Key.foregroundColor : UIColor(named: "PrimaryColor") ?? UIColor.orange]
+        let whiteFontColor = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        sortSegmentedControl.setTitleTextAttributes(orangeFontColor, for: .selected)
+        sortSegmentedControl.setTitleTextAttributes(whiteFontColor, for: .normal)
+
+        
+        sortSegmentedControl.layer.borderColor = UIColor.white.cgColor
+        sortSegmentedControl.layer.borderWidth = 1.0
     }
     
 
