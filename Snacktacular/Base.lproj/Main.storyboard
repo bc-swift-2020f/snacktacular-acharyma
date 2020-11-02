@@ -268,7 +268,11 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Look Up" id="3Ez-Oo-Olk"/>
+                        <barButtonItem title="Look Up" id="3Ez-Oo-Olk">
+                            <connections>
+                                <action selector="locationButtonPressed:" destination="Hsx-Bs-tT1" id="SRh-jx-viX"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Fpa-5g-9FB">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Rsa-q2-tpq">
