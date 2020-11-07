@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		77C7CDCC3FB03700BC77690F /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FB0C31AFDA12A95EA451C9 /* Pods_Snacktacular.framework */; };
 		7E100F4A2550A6C7009FECA5 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E100F492550A6C7009FECA5 /* APIKeys.swift */; };
+		7E11D99425575599006308C4 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E11D99325575598006308C4 /* ReviewTableViewController.swift */; };
 		7E2DC43C254F84B20085DA40 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DC43B254F84B20085DA40 /* SpotListViewController.swift */; };
 		7E2DC43F254F86850085DA40 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DC43E254F86850085DA40 /* SpotTableViewCell.swift */; };
 		7E2DC442254F8D3C0085DA40 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DC441254F8D3C0085DA40 /* SpotDetailViewController.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		21FB0C31AFDA12A95EA451C9 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E100F492550A6C7009FECA5 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		7E11D99325575598006308C4 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		7E2DC43B254F84B20085DA40 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		7E2DC43E254F86850085DA40 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		7E2DC441254F8D3C0085DA40 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				7E2DC43B254F84B20085DA40 /* SpotListViewController.swift */,
 				7E2DC43E254F86850085DA40 /* SpotTableViewCell.swift */,
 				7E2DC441254F8D3C0085DA40 /* SpotDetailViewController.swift */,
+				7E11D99325575598006308C4 /* ReviewTableViewController.swift */,
 				7E3057D8255088810097ACEE /* UIViewController+alert.swift */,
 				7E100F492550A6C7009FECA5 /* APIKeys.swift */,
 				7E3EA33D254F720A005E5C56 /* Main.storyboard */,
@@ -252,6 +255,7 @@
 				7E3EA33C254F720A005E5C56 /* LoginViewController.swift in Sources */,
 				7E3EA338254F720A005E5C56 /* AppDelegate.swift in Sources */,
 				7E2DC442254F8D3C0085DA40 /* SpotDetailViewController.swift in Sources */,
+				7E11D99425575599006308C4 /* ReviewTableViewController.swift in Sources */,
 				7E3057DD25508D640097ACEE /* Spots.swift in Sources */,
 				7E2DC43F254F86850085DA40 /* SpotTableViewCell.swift in Sources */,
 				7E100F4A2550A6C7009FECA5 /* APIKeys.swift in Sources */,
