@@ -26,6 +26,8 @@
 		7E3EA33F254F720A005E5C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA33D254F720A005E5C56 /* Main.storyboard */; };
 		7E3EA341254F7212005E5C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA340254F7212005E5C56 /* Assets.xcassets */; };
 		7E3EA344254F7212005E5C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA342254F7212005E5C56 /* LaunchScreen.storyboard */; };
+		7EF6FEEA255F17D100B10825 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF6FEE9255F17D100B10825 /* UIView+addBorder.swift */; };
+		7EF6FEED255F18F000B10825 /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF6FEEC255F18F000B10825 /* UIBarButtonItem+hide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		7E3EA343254F7212005E5C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E3EA345254F7212005E5C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA0887B5834ED60F91429A2 /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF6FEE9255F17D100B10825 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		7EF6FEEC255F18F000B10825 /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
 		836C0B81FA7F8B4835486171 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,8 @@
 				7E11D99C25577525006308C4 /* SpotReviewTableViewCell.swift */,
 				7E11D99325575598006308C4 /* ReviewTableViewController.swift */,
 				7E3057D8255088810097ACEE /* UIViewController+alert.swift */,
+				7EF6FEE9255F17D100B10825 /* UIView+addBorder.swift */,
+				7EF6FEEC255F18F000B10825 /* UIBarButtonItem+hide.swift */,
 				7E100F492550A6C7009FECA5 /* APIKeys.swift */,
 				7E3EA33D254F720A005E5C56 /* Main.storyboard */,
 				7E3EA340254F7212005E5C56 /* Assets.xcassets */,
@@ -268,12 +274,14 @@
 				7E11D99425575599006308C4 /* ReviewTableViewController.swift in Sources */,
 				7E11D9972557685E006308C4 /* Review.swift in Sources */,
 				7E3057DD25508D640097ACEE /* Spots.swift in Sources */,
+				7EF6FEED255F18F000B10825 /* UIBarButtonItem+hide.swift in Sources */,
 				7E2DC43F254F86850085DA40 /* SpotTableViewCell.swift in Sources */,
 				7E11D99D25577525006308C4 /* SpotReviewTableViewCell.swift in Sources */,
 				7E100F4A2550A6C7009FECA5 /* APIKeys.swift in Sources */,
 				7E3057C6254FC5C70097ACEE /* Spot.swift in Sources */,
 				7E3EA33A254F720A005E5C56 /* SceneDelegate.swift in Sources */,
 				7E3057D9255088810097ACEE /* UIViewController+alert.swift in Sources */,
+				7EF6FEEA255F17D100B10825 /* UIView+addBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
