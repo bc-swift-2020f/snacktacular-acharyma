@@ -196,14 +196,30 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d1v-Ck-bcX">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="d1v-Ck-bcX" customClass="SpotPhotoCollectionViewCell" customModule="Snacktacular" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mOE-eE-h3i">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kbO-H1-EM1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="5cW-7x-ns8"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="Zw9-Ea-ltK"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="kbO-H1-EM1" firstAttribute="leading" secondItem="mOE-eE-h3i" secondAttribute="leading" id="9fe-u3-BxI"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kbO-H1-EM1" secondAttribute="trailing" id="A5R-nN-adj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="kbO-H1-EM1" secondAttribute="bottom" id="s4w-I9-doA"/>
+                                                            <constraint firstItem="kbO-H1-EM1" firstAttribute="top" secondItem="mOE-eE-h3i" secondAttribute="top" id="zKF-8P-UWk"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
+                                                        <outlet property="photoImageView" destination="kbO-H1-EM1" id="ZvX-HF-kov"/>
                                                         <segue destination="y1C-Ug-m6q" kind="show" identifier="ShowPhoto" id="D23-f6-C72"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -421,6 +437,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="h2C-jq-CzZ" id="bh9-Kh-nV8"/>
                         <outlet property="cancelBarButton" destination="Rsa-q2-tpq" id="eFa-L0-M0G"/>
+                        <outlet property="collectionView" destination="XT7-MZ-sku" id="J8l-GG-AVv"/>
                         <outlet property="mapView" destination="QKf-K7-y4a" id="7b1-i9-fAO"/>
                         <outlet property="nameTextField" destination="Wrx-2I-Yqk" id="0Sw-Jm-p03"/>
                         <outlet property="ratingLabel" destination="ufJ-mB-hi9" id="15n-Yb-H0I"/>
@@ -787,13 +804,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-6H-ueK">
                                 <rect key="frame" x="8" y="52" width="304" height="15"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="by: Benedict Cumberbatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-Nf-ESd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="by: Benedict Cumberbatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-Nf-ESd">
                                         <rect key="frame" x="0.0" y="0.0" width="199.5" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="on Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfE-bY-FxN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfE-bY-FxN">
                                         <rect key="frame" x="207.5" y="0.0" width="96.5" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
@@ -987,7 +1004,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="00Q-8y-lVV"/>
+        <segue reference="D23-f6-C72"/>
         <segue reference="Fbu-5m-19N"/>
         <segue reference="cGK-QY-0rA"/>
     </inferredMetricsTieBreakers>
