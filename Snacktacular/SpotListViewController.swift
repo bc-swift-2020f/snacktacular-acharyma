@@ -81,6 +81,11 @@ class SpotListViewController: UIViewController {
         sortBasedonSegmentPressed()
     }
     
+    @IBAction func usersButtonPressed(_ sender: UIBarButtonItem) {
+        //TODO
+    }
+    
+    
     
 }
 
